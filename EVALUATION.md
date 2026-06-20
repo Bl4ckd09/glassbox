@@ -38,9 +38,13 @@ Adversarial prompt I held myself to: _"On-chain PnL trackers already show verifi
 3. **Replaced raw-PnL ranking with a disclosed, auditable GlassBox Score** that rewards risk-adjusted quality and penalises reckless sizing — implementing the BGA ethos *inside the product*.
 4. **Kept the data honest:** the platform's own AI agent currently ranks last and is shown that way, which is far more credible than a conveniently-winning first-party agent.
 
+## Recently closed
+
+- ✅ **Cryptographic signing of each call by a Sui address** — implemented (`src/lib/sign.ts`, verified in `/api/verify`, demonstrated by `npm run sign-demo`). Authorship, not just content, is now provable. Residual: in the demo the server derives the strategist keys; the decentralized version has each provider sign client-side with their own wallet.
+
 ## Known gaps / next steps (stated openly for judges)
 
-- On-chain DeepBook order **execution** via wallet connect (currently read + provenance).
-- Walrus writes via the `@mysten/walrus` TS SDK + Sui-side attestation object, instead of the public HTTP publisher.
-- Cryptographic signing of each call by the provider's Sui address (so authorship, not just content, is provable).
-- Longer multi-day backtests once deeper DeepBook history is indexed.
+- On-chain DeepBook order **execution** via wallet connect (currently read + provenance only).
+- Walrus writes via the `@mysten/walrus` TS SDK + a Sui-side Move **attestation object**, instead of the public HTTP publisher (removes third-party reliance, makes the on-chain anchor explicit).
+- Provider-side (client wallet) signing so the server never holds keys.
+- Longer multi-day, multi-regime backtests once deeper DeepBook history is indexed (current records are a real but short intraday window).
