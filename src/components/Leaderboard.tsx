@@ -79,6 +79,11 @@ function Row({ rank, rec }: { rank: number; rec: TrackRecord }) {
       {open && (
         <div className="space-y-3 border-t border-zinc-800 p-4">
           <p className="text-xs text-zinc-500">{rec.strategist.bio}</p>
+          {rec.strategist.address && (
+            <div className="text-[11px] text-zinc-600">
+              signs every call as <span className="font-mono text-zinc-400">{rec.strategist.address.slice(0, 10)}…{rec.strategist.address.slice(-6)}</span>
+            </div>
+          )}
           {/* disclosed score breakdown */}
           <div className="rounded-lg border border-zinc-800 bg-black/30 p-3">
             <div className="mb-2 flex items-center justify-between">

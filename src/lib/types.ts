@@ -59,8 +59,16 @@ export interface TradingCall {
   snapshot: MarketSnapshot;
   createdAt: number;
   engineVersion: string;
+  // cryptographic authorship — proves WHO made the call (see lib/sign.ts)
+  signature?: CallSignature;
   // populated after the call is written to Walrus
   walrus?: WalrusProof;
+}
+
+export interface CallSignature {
+  signerAddress: string;
+  signature: string;
+  scheme: "ed25519-personalmessage";
 }
 
 export interface WalrusProof {
@@ -97,6 +105,7 @@ export interface Strategist {
   kind: StrategistKind;
   bio: string;
   strategy: string; // short description of the visible strategy
+  address?: string; // provable Sui identity (signs every call)
 }
 
 // A strategist's verifiable track record, computed purely from immutable calls.

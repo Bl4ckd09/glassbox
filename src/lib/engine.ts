@@ -3,6 +3,7 @@ import { decide, ENGINE_VERSION } from "./strategy";
 import { narrate } from "./narrate";
 import { getCloseSeries, getSnapshot } from "./deepbook";
 import { storeJson } from "./walrus";
+import { signCall } from "./sign";
 
 // Build a fully-formed, explainable trading call from live DeepBook data and
 // anchor it immutably to Walrus. The returned call carries its Walrus proof.
@@ -41,6 +42,16 @@ export async function buildCallFromData(
     createdAt: Date.now(),
     engineVersion: ENGINE_VERSION,
   };
+
+  // Sign the canonical payload — proves authorship before anchoring.
+  call.signature = await signCall(strategistId, {
+    strategistId,
+    pool: call.pool,
+    side: call.side,
+    entryPrice: call.entryPrice,
+    confidence: call.confidence,
+    createdAt: call.createdAt,
+  });
 
   if (opts.anchor !== false) {
     // The immutable record: the entire call, written to Walrus the instant it is made.

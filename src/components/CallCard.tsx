@@ -27,7 +27,14 @@ export default function CallCard({
   defaultOpen?: boolean;
 }) {
   const [open, setOpen] = useState(defaultOpen);
-  const [verify, setVerify] = useState<null | { loading: boolean; ok?: boolean; data?: unknown; err?: string }>(null);
+  const [verify, setVerify] = useState<null | {
+    loading: boolean;
+    ok?: boolean;
+    data?: unknown;
+    err?: string;
+    signatureValid?: boolean | null;
+    signerAddress?: string | null;
+  }>(null);
 
   async function runVerify() {
     if (!call.walrus?.blobId) return;
@@ -35,7 +42,14 @@ export default function CallCard({
     try {
       const r = await fetch(`/api/verify?blobId=${call.walrus.blobId}`);
       const j = await r.json();
-      setVerify({ loading: false, ok: j.verified, data: j.data, err: j.error });
+      setVerify({
+        loading: false,
+        ok: j.verified,
+        data: j.data,
+        err: j.error,
+        signatureValid: j.signatureValid,
+        signerAddress: j.signerAddress,
+      });
     } catch (e) {
       setVerify({ loading: false, ok: false, err: String(e) });
     }
@@ -67,6 +81,11 @@ export default function CallCard({
         )}
         {(!result || result.outcome === "OPEN") && (
           <span className="rounded-md bg-zinc-800 px-2 py-0.5 text-xs font-semibold text-amber-300">OPEN</span>
+        )}
+        {call.signature && (
+          <span className="inline-flex items-center gap-1 rounded-md border border-violet-700/50 bg-violet-900/20 px-2 py-0.5 text-xs text-violet-300">
+            ✍ signed
+          </span>
         )}
         {call.walrus?.blobId ? (
           <span className="inline-flex items-center gap-1 rounded-md border border-emerald-700/50 bg-emerald-900/20 px-2 py-0.5 text-xs text-emerald-300">
@@ -171,6 +190,14 @@ export default function CallCard({
                     </div>
                   ) : (
                     <div className="text-xs text-rose-300">✗ {verify.err || "verification failed"}</div>
+                  )}
+                  {verify.ok && verify.signatureValid === true && (
+                    <div className="mt-0.5 text-xs text-emerald-300">
+                      ✓ Signature valid — authored by {shortId(verify.signerAddress || "", 6, 4)}.
+                    </div>
+                  )}
+                  {verify.ok && verify.signatureValid === false && (
+                    <div className="mt-0.5 text-xs text-rose-300">✗ Signature check failed.</div>
                   )}
                   {verify.ok && (
                     <pre className="mt-1 max-h-40 overflow-auto rounded bg-black/50 p-2 text-[10px] text-zinc-400">

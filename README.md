@@ -31,6 +31,10 @@ The trading decision is made by a **transparent, deterministic quant engine** (`
 
 An **optional Claude narration layer** (`src/lib/narrate.ts`, enabled by setting `ANTHROPIC_API_KEY`) only rewrites the *already-made, already-disclosed* reasoning into plainer language for retail users. The AI can clarify the decision but can never silently change it — by design, the model never becomes an unaccountable black box. This directly answers BGA's "reduce black-box opacity" criterion.
 
+## Cryptographic authorship (not just content)
+
+Anchoring proves a call *exists*; signing proves *who made it*. Each strategist has a Sui Ed25519 identity and **signs the canonical call payload** (`src/lib/sign.ts`) before it's anchored. Verification (`/api/verify`) re-checks the signature against the signer's Sui address, so a call can't be forged in someone else's name or edited after the fact without breaking the signature. Run `npm run sign-demo` to see a valid signature accepted, a tampered call rejected, and impersonation made impossible.
+
 ---
 
 ## How it maps to the judging criteria

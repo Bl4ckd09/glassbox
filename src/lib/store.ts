@@ -1,5 +1,6 @@
 import type { CallResult, Strategist, TrackRecord, TradingCall } from "./types";
 import seed from "@/data/seed.json";
+import { addressForStrategist } from "./sign";
 
 // In-memory store seeded from immutable, Walrus-anchored historical data.
 // Source of truth for any single call is ALWAYS Walrus (each call carries a
@@ -39,6 +40,9 @@ const seedData = seed as unknown as SeedShape;
 // live (runtime) additions on top of the seed
 const liveCalls: TradingCall[] = [];
 const liveResults: CallResult[] = [];
+
+// Attach each strategist's provable Sui identity (derived from their signing key).
+for (const s of STRATEGISTS) s.address = addressForStrategist(s.id);
 
 export function getStrategist(id: string): Strategist | undefined {
   return STRATEGISTS.find((s) => s.id === id);
