@@ -1,0 +1,2952 @@
+{
+  "calls": [
+    {
+      "id": "aletheia-SUI_USDC-1",
+      "strategistId": "aletheia",
+      "pool": "SUI_USDC",
+      "side": "SELL",
+      "confidence": 0.179,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.05,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.027326533098385602
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 90,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.1,
+          "interpretation": "flat",
+          "vote": 0.023768577939963852
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of -0.18 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.79% size, 1.5% stop, 2.7% target. Last price 0.71591 (+0.09% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0179,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.79% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71591,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71591,
+        "highestBid": 0.7156952270000001,
+        "lowestAsk": 0.716124773,
+        "priceChangePct24h": 0.08527890395638185,
+        "high24h": 0.71591,
+        "low24h": 0.71466,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923490315,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781901890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "uhf8AV3c4PrDhHZiznc2mti3FnYhYj0oZ1fXwHuwFkg",
+        "suiObjectId": "0xfd7b7f5968e412366c2d58950092150901e1fac091241ccdbc10cbab7d8c4b1c",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/uhf8AV3c4PrDhHZiznc2mti3FnYhYj0oZ1fXwHuwFkg",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-SUI_USDC-2",
+      "strategistId": "aletheia",
+      "pool": "SUI_USDC",
+      "side": "BUY",
+      "confidence": 0.121,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.03,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.012807505532644349
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 30.2,
+          "interpretation": "neutral",
+          "vote": 0.6589147286822903
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.05,
+          "interpretation": "flat",
+          "vote": -0.012990660768203828
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.01,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of 0.12 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.21% size, 1.5% stop, 2.7% target. Last price 0.71168 (-0.21% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0121,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.21% of portfolio: 10% cap × confidence 12% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.01%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71168,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71168,
+        "highestBid": 0.711466496,
+        "lowestAsk": 0.711893504,
+        "priceChangePct24h": -0.20612774311154336,
+        "high24h": 0.71326,
+        "low24h": 0.71165,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923509838,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781880290314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "o7iG-0oNC-UBBH_gM1aQNpAQLO30fOwbH6fa2o1yaxE",
+        "suiObjectId": "0xffcbd776334ab87ad7e1fdccabac0c8f0f3ac44672f4a374358599b5d40b7bab",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/o7iG-0oNC-UBBH_gM1aQNpAQLO30fOwbH6fa2o1yaxE",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-SUI_USDC-3",
+      "strategistId": "aletheia",
+      "pool": "SUI_USDC",
+      "side": "SELL",
+      "confidence": 0.185,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.04,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.01910798184910529
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 88,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.08,
+          "interpretation": "flat",
+          "vote": 0.01897986728152011
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of -0.18 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.85% size, 1.5% stop, 2.7% target. Last price 0.71182 (-0.10% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0185,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.85% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71182,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71182,
+        "highestBid": 0.711606454,
+        "lowestAsk": 0.712033546,
+        "priceChangePct24h": -0.09543859649123002,
+        "high24h": 0.71252,
+        "low24h": 0.71097,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923525911,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781858690314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "D-YbTIf2D2gASd3SW9OpnKHmzGacKUBS9koHAOjRgG0",
+        "suiObjectId": "0x3f42af40719078cafe239ceb43b689cd2e11598478aa17d4c6697f456533a76e",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/D-YbTIf2D2gASd3SW9OpnKHmzGacKUBS9koHAOjRgG0",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-SUI_USDC-4",
+      "strategistId": "aletheia",
+      "pool": "SUI_USDC",
+      "side": "SELL",
+      "confidence": 0.182,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.04,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.022008275111449475
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 90.2,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.09,
+          "interpretation": "flat",
+          "vote": 0.023116366387402068
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.01,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of -0.18 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.82% size, 1.5% stop, 2.7% target. Last price 0.71444 (+0.16% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0182,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.82% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.01%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71444,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71444,
+        "highestBid": 0.714225668,
+        "lowestAsk": 0.714654332,
+        "priceChangePct24h": 0.16122474729773087,
+        "high24h": 0.71452,
+        "low24h": 0.71316,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923544039,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781837090314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "BVTOO5TKR2-Ch8QgjrPsqZbFYRllObDpa2aWN-TzaQ8",
+        "suiObjectId": "0x5e2b03117e07830392a6870fa945baff3108eeab5a99e9451b90f0e2615722ca",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/BVTOO5TKR2-Ch8QgjrPsqZbFYRllObDpa2aWN-TzaQ8",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-SUI_USDC-5",
+      "strategistId": "aletheia",
+      "pool": "SUI_USDC",
+      "side": "BUY",
+      "confidence": 0.16,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.07,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.03447481033842771
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 22.4,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 0.91880341880332
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.09,
+          "interpretation": "flat",
+          "vote": -0.02139149950904753
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of 0.16 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.60% size, 1.5% stop, 2.7% target. Last price 0.71229 (-0.14% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.016,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.60% of portfolio: 10% cap × confidence 16% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71229,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71229,
+        "highestBid": 0.712076313,
+        "lowestAsk": 0.712503687,
+        "priceChangePct24h": -0.13599528923534565,
+        "high24h": 0.71331,
+        "low24h": 0.712,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923558513,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781815490314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "uNGCqZT862HYLahtVGGI5aHIjQOx42FXU4pdDYDmHV0",
+        "suiObjectId": "0xb0666c0f74de6bb191ba389b490ca31daae8e0c2cd046943366ca7f368261580",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/uNGCqZT862HYLahtVGGI5aHIjQOx42FXU4pdDYDmHV0",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-SUI_USDC-6",
+      "strategistId": "aletheia",
+      "pool": "SUI_USDC",
+      "side": "BUY",
+      "confidence": 0.124,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.02,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.008213142100088364
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 30.9,
+          "interpretation": "neutral",
+          "vote": 0.6372549019608001
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.01,
+          "interpretation": "flat",
+          "vote": 0.0014084110306766008
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.01,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of 0.12 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.24% size, 1.5% stop, 2.7% target. Last price 0.71006 (-0.05% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0124,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.24% of portfolio: 10% cap × confidence 12% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.01%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71006,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71006,
+        "highestBid": 0.7098469820000001,
+        "lowestAsk": 0.710273018,
+        "priceChangePct24h": -0.05067424903578544,
+        "high24h": 0.71074,
+        "low24h": 0.71002,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923572950,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781793890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "0OChx5I0CxYUMQh6-bHuGbg0Ruv-FIJKxedNr0AoQDQ",
+        "suiObjectId": "0x6ac625ceb8a56d4da5ef5d818f78bc38bd6c55309714c3228092365128d4401e",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/0OChx5I0CxYUMQh6-bHuGbg0Ruv-FIJKxedNr0AoQDQ",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-DEEP_USDC-7",
+      "strategistId": "aletheia",
+      "pool": "DEEP_USDC",
+      "side": "SELL",
+      "confidence": 0.137,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.09,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.04692832764504041
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 50.5,
+          "interpretation": "neutral",
+          "vote": -0.01683501683501589
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -1.47,
+          "interpretation": "negative momentum",
+          "vote": -0.3687315634218292
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.43,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of -0.14 (range −1 to +1), which maps to a short (SELL). Bearish factors: Momentum (10). Risk is bounded before entry: 1.37% size, 1.5% stop, 2.7% target. Last price 0.0167 (-0.36% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0137,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.37% of portfolio: 10% cap × confidence 14% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.43%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.0167,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.0167,
+        "highestBid": 0.01669499,
+        "lowestAsk": 0.01670501,
+        "priceChangePct24h": -0.35799522673031636,
+        "high24h": 0.01695,
+        "low24h": 0.01658,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781923586709,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781772290314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "TWHSwhu76GQEC1W4j32FlqvTXDFh9xQMlN-42gAyJDo",
+        "suiObjectId": "0x71d184b0c50a9ab36c6dc76c2c564f701e7e646324a181106cdac55451511974",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/TWHSwhu76GQEC1W4j32FlqvTXDFh9xQMlN-42gAyJDo",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-WAL_USDC-8",
+      "strategistId": "aletheia",
+      "pool": "WAL_USDC",
+      "side": "BUY",
+      "confidence": 0.129,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.17,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.0853155591455927
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 20.1,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 0.9968847352024677
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.36,
+          "interpretation": "flat",
+          "vote": -0.09104358711732971
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.06,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of 0.13 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Bearish factors: SMA 7 vs 21 (trend), Momentum (10). Risk is bounded before entry: 1.29% size, 1.5% stop, 2.7% target. Last price 0.03502 (-0.61% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0129,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.29% of portfolio: 10% cap × confidence 13% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.06%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.03502,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.03502,
+        "highestBid": 0.035009494,
+        "lowestAsk": 0.035030506,
+        "priceChangePct24h": -0.6073678832945419,
+        "high24h": 0.035277,
+        "low24h": 0.03502,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924554920,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781750690314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "pHOmlfUyRw0-Dhm0BccZ603hCLOsWJ6qDXs8vDzc9oI",
+        "suiObjectId": "0x5551cba9306a6f78a60c6e3f82530269ff3648c9cde978848a839d80208eda2e",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/pHOmlfUyRw0-Dhm0BccZ603hCLOsWJ6qDXs8vDzc9oI",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-WAL_USDC-9",
+      "strategistId": "aletheia",
+      "pool": "WAL_USDC",
+      "side": "BUY",
+      "confidence": 0.181,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.08,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.03846735177131776
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 18.2,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0,
+          "interpretation": "flat",
+          "vote": 0
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.09,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of 0.18 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.81% size, 1.5% stop, 2.7% target. Last price 0.034944 (+0.00% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0181,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.81% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.09%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034944,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034944,
+        "highestBid": 0.0349335168,
+        "lowestAsk": 0.034954483200000004,
+        "priceChangePct24h": 0,
+        "high24h": 0.035041,
+        "low24h": 0.034944,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924569494,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781729090314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "OIsYInsnuOtBAMLZhSdKUSoDXUP9ursMAPDeuAt_zOA",
+        "suiObjectId": "0xd491b4fad9cd9be8b1d650f79ef266906d4d3d90e3c6cbf5ab71d056abd0ef89",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/OIsYInsnuOtBAMLZhSdKUSoDXUP9ursMAPDeuAt_zOA",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-WAL_USDC-10",
+      "strategistId": "aletheia",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.176,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.0011682483833563356
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 77.3,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -0.9090909090910045
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.07,
+          "interpretation": "flat",
+          "vote": 0.016595953473606796
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.18 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.76% size, 1.5% stop, 2.7% target. Last price 0.03467 (+0.11% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0176,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.76% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.03467,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.03467,
+        "highestBid": 0.034659599,
+        "lowestAsk": 0.034680401,
+        "priceChangePct24h": 0.10683452198770625,
+        "high24h": 0.03467,
+        "low24h": 0.034573,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924584925,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781707490314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "ZEm7usn2VLV3UgqYmotYnkwM5-m-VYBm5whf4s0aRi0",
+        "suiObjectId": "0x4200cd789d1cf48b02d3589aaab37ead72897afcc5ac1d5ac47055ebac5ad8f0",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/ZEm7usn2VLV3UgqYmotYnkwM5-m-VYBm5whf4s0aRi0",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-WAL_USDC-11",
+      "strategistId": "aletheia",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.174,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.02,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.010787590285955606
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 83.3,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.27,
+          "interpretation": "flat",
+          "vote": 0.06782106782106556
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.06,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.17 (range −1 to +1), which maps to a short (SELL). Bullish factors: Momentum (10). Bearish factors: RSI (14). Risk is bounded before entry: 1.74% size, 1.5% stop, 2.7% target. Last price 0.034744 (+0.29% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0174,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.74% of portfolio: 10% cap × confidence 17% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.06%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034744,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034744,
+        "highestBid": 0.0347335768,
+        "lowestAsk": 0.034754423199999995,
+        "priceChangePct24h": 0.2886502713312433,
+        "high24h": 0.034744,
+        "low24h": 0.034643,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924681333,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781685890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "94Vw9a_xSzSC126T_rUMEBDgrDFUsLbxbAWhU1Qw9Ik",
+        "suiObjectId": "0x41b321fd7dff0fd97b7c45e2bfa7f80997d2dbe6a9c06756dc0fe2623831ab9f",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/94Vw9a_xSzSC126T_rUMEBDgrDFUsLbxbAWhU1Qw9Ik",
+        "certified": false
+      }
+    },
+    {
+      "id": "aletheia-WAL_USDC-12",
+      "strategistId": "aletheia",
+      "pool": "WAL_USDC",
+      "side": "BUY",
+      "confidence": 0.12,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.01,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.002551886050684558
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 30.8,
+          "interpretation": "neutral",
+          "vote": 0.641025641025504
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.09,
+          "interpretation": "flat",
+          "vote": -0.02244945252302612
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.03,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of 0.12 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.20% size, 1.5% stop, 2.7% target. Last price 0.034491 (-0.41% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.012,
+        "stopLossPct": 1.5,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.20% of portfolio: 10% cap × confidence 12% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.03%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034491,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034491,
+        "highestBid": 0.0344806527,
+        "lowestAsk": 0.0345013473,
+        "priceChangePct24h": -0.41288906854535223,
+        "high24h": 0.034641,
+        "low24h": 0.034491,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924696709,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781664290314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "2-Mv8BTPDyedyE8z_TWWu-gPGKIJLoXtg1onSKiHStw",
+        "suiObjectId": "0xe5b2893b9be988be0127bfabbb19bd4f5295c786ba67888daf8df995edc6849f",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/2-Mv8BTPDyedyE8z_TWWu-gPGKIJLoXtg1onSKiHStw",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-SUI_USDC-1",
+      "strategistId": "momentum-mia",
+      "pool": "SUI_USDC",
+      "side": "SELL",
+      "confidence": 0.185,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.04,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.01910798184910529
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 88,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.08,
+          "interpretation": "flat",
+          "vote": 0.01897986728152011
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of -0.18 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.85% size, 1.5% stop, 2.7% target. Last price 0.71182 (-0.10% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0204,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.85% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71182,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71182,
+        "highestBid": 0.711606454,
+        "lowestAsk": 0.712033546,
+        "priceChangePct24h": -0.09543859649123002,
+        "high24h": 0.71252,
+        "low24h": 0.71097,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924711499,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781642690314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "PvwoOmK92_laSvm20T3TkRsr7wIMjTmdZdVXBk8UeVg",
+        "suiObjectId": "0xb0f426039609c1325b52e6d1d6d6ef00c1e56eb55d19b1a4976d2d9752664674",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/PvwoOmK92_laSvm20T3TkRsr7wIMjTmdZdVXBk8UeVg",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-SUI_USDC-2",
+      "strategistId": "momentum-mia",
+      "pool": "SUI_USDC",
+      "side": "SELL",
+      "confidence": 0.181,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.04,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.022409860338555826
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 97.4,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.1,
+          "interpretation": "flat",
+          "vote": 0.025918350191938482
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.01,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of -0.18 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.81% size, 1.5% stop, 2.7% target. Last price 0.71452 (+0.15% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0199,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.81% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.01%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71452,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71452,
+        "highestBid": 0.7143056440000001,
+        "lowestAsk": 0.714734356,
+        "priceChangePct24h": 0.15418687449188273,
+        "high24h": 0.71452,
+        "low24h": 0.71316,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781924726935,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781621090314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "WDBr_qaQVgYpljBmsposkvBmM6LVdF856tGldYkGGJ0",
+        "suiObjectId": "0x2e4d348904c9839d49560f85c12c66e40c6a602dc76d5d5983a2391951bb21cc",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/WDBr_qaQVgYpljBmsposkvBmM6LVdF856tGldYkGGJ0",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-SUI_USDC-3",
+      "strategistId": "momentum-mia",
+      "pool": "SUI_USDC",
+      "side": "SELL",
+      "confidence": 0.122,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.05,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.026288346078888643
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 70.9,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -0.6953642384107146
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.06,
+          "interpretation": "flat",
+          "vote": 0.0143837442640442
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of -0.12 (range −1 to +1), which maps to a short (SELL). Bearish factors: RSI (14). Risk is bounded before entry: 1.22% size, 1.5% stop, 2.7% target. Last price 0.71302 (+0.05% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0134,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.22% of portfolio: 10% cap × confidence 12% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71302,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71302,
+        "highestBid": 0.712806094,
+        "lowestAsk": 0.713233906,
+        "priceChangePct24h": 0.05472685685418822,
+        "high24h": 0.71332,
+        "low24h": 0.71211,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925670317,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781599490314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "CNYpQ5gBdyifdWfAA0kojFRZofRzpnn7a0vnQX95nFI",
+        "suiObjectId": "0x39e36cea383a16124ee2f3356b8950c70a47ebe66126c34e662522b6b7a4bde0",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/CNYpQ5gBdyifdWfAA0kojFRZofRzpnn7a0vnQX95nFI",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-SUI_USDC-4",
+      "strategistId": "momentum-mia",
+      "pool": "SUI_USDC",
+      "side": "BUY",
+      "confidence": 0.178,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.06,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.02835642929429008
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 9,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.1,
+          "interpretation": "flat",
+          "vote": -0.02489446150825333
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of 0.18 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.78% size, 1.5% stop, 2.7% target. Last price 0.7123 (-0.05% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0196,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.78% of portfolio: 10% cap × confidence 18% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.7123,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.7123,
+        "highestBid": 0.71208631,
+        "lowestAsk": 0.7125136900000001,
+        "priceChangePct24h": -0.054722249505395254,
+        "high24h": 0.71331,
+        "low24h": 0.7123,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925684020,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781577890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "iugjWMiuWeXotTxCSirIyxC0I1qWn52c4veAsDKEO70",
+        "suiObjectId": "0x62c6b25111345bfd0046e7d9eb3002073d8a286aead552b1e6c198fe255c80f1",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/iugjWMiuWeXotTxCSirIyxC0I1qWn52c4veAsDKEO70",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-SUI_USDC-5",
+      "strategistId": "momentum-mia",
+      "pool": "SUI_USDC",
+      "side": "BUY",
+      "confidence": 0.159,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.04,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.019808989057794036
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 24.4,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 0.85185185185187
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.02,
+          "interpretation": "flat",
+          "vote": -0.0052793107331900934
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.01,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On SUI_USDC, the disclosed weighted-vote model produced a conviction score of 0.16 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.59% size, 1.5% stop, 2.7% target. Last price 0.71017 (-0.02% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0175,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.59% of portfolio: 10% cap × confidence 16% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.01%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.71017,
+      "snapshot": {
+        "pool": "SUI_USDC",
+        "baseSymbol": "SUI",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.71017,
+        "highestBid": 0.709956949,
+        "lowestAsk": 0.710383051,
+        "priceChangePct24h": -0.021117242932760374,
+        "high24h": 0.71074,
+        "low24h": 0.71002,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925698582,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781556290314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "2ZEsxMxLSWCOVhujeyFAVjmdGNZ36fLwe-yRona1cks",
+        "suiObjectId": "0x0e7e43c5d18116fe9b0f8e381febdf5299f3333b12b9da266e9de7c91a094200",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/2ZEsxMxLSWCOVhujeyFAVjmdGNZ36fLwe-yRona1cks",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-DEEP_USDC-6",
+      "strategistId": "momentum-mia",
+      "pool": "DEEP_USDC",
+      "side": "SELL",
+      "confidence": 0.136,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.09,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.04605509340546745
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 84.6,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -1
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.54,
+          "interpretation": "flat",
+          "vote": 0.13611615245009046
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.12,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of -0.14 (range −1 to +1), which maps to a short (SELL). Bullish factors: Momentum (10). Bearish factors: RSI (14). Risk is bounded before entry: 1.36% size, 1.5% stop, 2.7% target. Last price 0.01662 (+0.24% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.015,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.36% of portfolio: 10% cap × confidence 14% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.12%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01662,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01662,
+        "highestBid": 0.016615014,
+        "lowestAsk": 0.016624985999999998,
+        "priceChangePct24h": 0.2412545235223062,
+        "high24h": 0.01666,
+        "low24h": 0.01653,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925713140,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781534690314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "vW4lUOknz1qXYlwLzDweQ46gAUhMO9MLwFEMO4glbe8",
+        "suiObjectId": "0x26acf348837e301fd5fde5e309ec15f3854ed8437595d95a7efa4f53a2c522bc",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/vW4lUOknz1qXYlwLzDweQ46gAUhMO9MLwFEMO4glbe8",
+        "certified": false
+      }
+    },
+    {
+      "id": "momentum-mia-DEEP_USDC-7",
+      "strategistId": "momentum-mia",
+      "pool": "DEEP_USDC",
+      "side": "BUY",
+      "confidence": 0.138,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.02,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.008634832915988717
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 30,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 0.6666666666667013
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.12,
+          "interpretation": "flat",
+          "vote": 0.030229746070131777
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.12,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of 0.14 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.38% size, 1.5% stop, 2.7% target. Last price 0.01656 (+0.12% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0152,
+        "stopLossPct": 1.8,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.38% of portfolio: 10% cap × confidence 14% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.12%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01656,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01656,
+        "highestBid": 0.016555031999999997,
+        "lowestAsk": 0.016564968,
+        "priceChangePct24h": 0.12091898428052711,
+        "high24h": 0.0166,
+        "low24h": 0.01653,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925727442,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781513090314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "8nwUJ86hFwTOP57MhyzaGvQEU9SkJ5c6elgWaAwlC8Q",
+        "suiObjectId": "0xf4dd0122c2b8835c16c9f711317739cec2aad7d6f50ca2d794c008992628ee2c",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/8nwUJ86hFwTOP57MhyzaGvQEU9SkJ5c6elgWaAwlC8Q",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-DEEP_USDC-1",
+      "strategistId": "diamond-dan",
+      "pool": "DEEP_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.14,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.06905481225723235
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 64.7,
+          "interpretation": "neutral",
+          "vote": -0.4901960784313966
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.18,
+          "interpretation": "flat",
+          "vote": 0.045317220543810044
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.12,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of -0.05 (range −1 to +1), which maps to no position (HOLD). Bullish factors: SMA 7 vs 21 (trend). Bearish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.01658 (+0.24% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 5% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.12%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01658,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01658,
+        "highestBid": 0.016575026,
+        "lowestAsk": 0.016584974000000002,
+        "priceChangePct24h": 0.24183796856107523,
+        "high24h": 0.01666,
+        "low24h": 0.01653,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925742570,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781491490314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "0sa7wegWmqK5SUK-sEqzHBpr4JFNdAhlZRoMWAv2zlc",
+        "suiObjectId": "0xfbff9c0655c49b3b72b0420d800e6109d66c150bd2e650b4f2f00448aba74882",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/0sa7wegWmqK5SUK-sEqzHBpr4JFNdAhlZRoMWAv2zlc",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-DEEP_USDC-2",
+      "strategistId": "diamond-dan",
+      "pool": "DEEP_USDC",
+      "side": "BUY",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.57,
+          "interpretation": "fast above slow — uptrend",
+          "vote": 0.28509719222460883
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 73,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -0.7657657657657685
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 1.28,
+          "interpretation": "positive momentum",
+          "vote": 0.31992687385740154
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.31,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of 0.09 (range −1 to +1), which maps to no position (HOLD). Bullish factors: SMA 7 vs 21 (trend), Momentum (10). Bearish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.01662 (+0.54% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0153,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.85% of portfolio: 10% cap × confidence 9% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.31%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01662,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01662,
+        "highestBid": 0.016615014,
+        "lowestAsk": 0.016624985999999998,
+        "priceChangePct24h": 0.5444646098003618,
+        "high24h": 0.01664,
+        "low24h": 0.01637,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925756760,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781469890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "WZVy-7a-z9R1nXM41pZyYfoMpNJpJUHFat3CeJDDAzI",
+        "suiObjectId": "0x04a8d9ed3d2cab958bfb198caab3573824d83dbdc8cf35d8cc33938d1ffa3d34",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/WZVy-7a-z9R1nXM41pZyYfoMpNJpJUHFat3CeJDDAzI",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-DEEP_USDC-3",
+      "strategistId": "diamond-dan",
+      "pool": "DEEP_USDC",
+      "side": "BUY",
+      "confidence": 0.123,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.06,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.03138105155052625
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 28.6,
+          "interpretation": "oversold (<30) — bullish",
+          "vote": 0.7142857142857143
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.06,
+          "interpretation": "flat",
+          "vote": -0.014979029358896934
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.1,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of 0.12 (range −1 to +1), which maps to a long (BUY). Bullish factors: RSI (14). Risk is bounded before entry: 1.23% size, 1.5% stop, 2.7% target. Last price 0.01668 (-1.24% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.0221,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 1.23% of portfolio: 10% cap × confidence 12% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.10%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01668,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01668,
+        "highestBid": 0.016674996,
+        "lowestAsk": 0.016685004,
+        "priceChangePct24h": -1.2433392539964383,
+        "high24h": 0.01691,
+        "low24h": 0.01668,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925771130,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781448290314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "I_LNwTbI6ANdI4VxS8y6id4an7mIeh4u9ZmTL-OZgEU",
+        "suiObjectId": "0x0ac587bef3380e7e44d391fefafa7263d2e9955463490f823e744b03fd53c955",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/I_LNwTbI6ANdI4VxS8y6id4an7mIeh4u9ZmTL-OZgEU",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-DEEP_USDC-4",
+      "strategistId": "diamond-dan",
+      "pool": "DEEP_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.1,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.05030614884872326
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 52,
+          "interpretation": "neutral",
+          "vote": -0.06666666666666311
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.06,
+          "interpretation": "flat",
+          "vote": -0.01508750754375839
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.26,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of -0.04 (range −1 to +1), which maps to no position (HOLD). Bearish factors: SMA 7 vs 21 (trend), RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.01656 (-0.30% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 4% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.26%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01656,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01656,
+        "highestBid": 0.016555031999999997,
+        "lowestAsk": 0.016564968,
+        "priceChangePct24h": -0.30102347983143546,
+        "high24h": 0.01667,
+        "low24h": 0.01652,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925785204,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781426690314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "o055QnfNNc7lyrGvcEuOpvpV9EQfRaLhfDxk-EKVNK0",
+        "suiObjectId": "0xd3f799ac6ac0a6e011861abf7606b33ba5e95cd24c03dcf4820aaca88d445fd9",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/o055QnfNNc7lyrGvcEuOpvpV9EQfRaLhfDxk-EKVNK0",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-DEEP_USDC-5",
+      "strategistId": "diamond-dan",
+      "pool": "DEEP_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.23,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.11709267456804244
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 73.9,
+          "interpretation": "overbought (>70) — bearish",
+          "vote": -0.7971014492753274
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.72,
+          "interpretation": "flat",
+          "vote": 0.18028846153846462
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.18,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of -0.05 (range −1 to +1), which maps to no position (HOLD). Bullish factors: SMA 7 vs 21 (trend), Momentum (10). Bearish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.01676 (+0.72% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 5% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.18%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01676,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01676,
+        "highestBid": 0.016754972,
+        "lowestAsk": 0.016765028,
+        "priceChangePct24h": 0.7211538461538585,
+        "high24h": 0.01676,
+        "low24h": 0.01657,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925799196,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781405090314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "fkqRc6zCafbAjzTxaya40jTrI1XkVDzysQPeS-gWZQc",
+        "suiObjectId": "0x68e38d1b89d6eb9f9e6b76b53f7222b992cbb097fff31bf0a216f4028074b2bf",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/fkqRc6zCafbAjzTxaya40jTrI1XkVDzysQPeS-gWZQc",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-DEEP_USDC-6",
+      "strategistId": "diamond-dan",
+      "pool": "DEEP_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.13,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.06297048973868578
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 40.6,
+          "interpretation": "neutral",
+          "vote": 0.3125000000000147
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.54,
+          "interpretation": "flat",
+          "vote": -0.1344889420203225
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.21,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On DEEP_USDC, the disclosed weighted-vote model produced a conviction score of -0.01 (range −1 to +1), which maps to no position (HOLD). Bullish factors: RSI (14). Bearish factors: SMA 7 vs 21 (trend), Momentum (10). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.01664 (+0.48% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 1% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.21%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.01664,
+      "snapshot": {
+        "pool": "DEEP_USDC",
+        "baseSymbol": "DEEP",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.01664,
+        "highestBid": 0.016635008,
+        "lowestAsk": 0.016644991999999997,
+        "priceChangePct24h": 0.4830917874396148,
+        "high24h": 0.01673,
+        "low24h": 0.01654,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925813636,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781383490314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "w895F4BCIWdt_ZKEEeMGYKfKWh2_k_Y1769uRaSnwKs",
+        "suiObjectId": "0x520e82260fee914086065e7721887e2b76535b560ca8b0af3cbe34d3ce4c73ce",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/w895F4BCIWdt_ZKEEeMGYKfKWh2_k_Y1769uRaSnwKs",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-WAL_USDC-7",
+      "strategistId": "diamond-dan",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.03,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.014457366831595233
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 57.5,
+          "interpretation": "neutral",
+          "vote": -0.25000000000002487
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": -0.06,
+          "interpretation": "flat",
+          "vote": -0.014749262536873286
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.08,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.05 (range −1 to +1), which maps to no position (HOLD). Bearish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.035574 (-0.19% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 5% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.08%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.035574,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.035574,
+        "highestBid": 0.0355633278,
+        "lowestAsk": 0.0355846722,
+        "priceChangePct24h": -0.19358639845130773,
+        "high24h": 0.035677,
+        "low24h": 0.03552,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925827972,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781361890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "UBXW1IHRB7u4WgyuLKfeEvD2jtUDmgm87nru8aoRXc0",
+        "suiObjectId": "0x9805a447cb327a254548e3d0258d78d03eb1c5a717aed47218f4f964b74ecf58",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/UBXW1IHRB7u4WgyuLKfeEvD2jtUDmgm87nru8aoRXc0",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-WAL_USDC-8",
+      "strategistId": "diamond-dan",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.01,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.0058568504037757345
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 52.6,
+          "interpretation": "neutral",
+          "vote": -0.08771929824563524
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.02,
+          "interpretation": "flat",
+          "vote": 0.004291108822519068
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.06,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.02 (range −1 to +1), which maps to no position (HOLD). Bearish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.034962 (-0.24% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 2% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.06%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034962,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034962,
+        "highestBid": 0.0349515114,
+        "lowestAsk": 0.0349724886,
+        "priceChangePct24h": -0.23968498544769942,
+        "high24h": 0.035062,
+        "low24h": 0.034946,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925842622,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781340290314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "k-JtgVeOfzf4nGJ2OjEo8c8VnBJcOaT8TB_SYhDnQLg",
+        "suiObjectId": "0x0183545bb7eb3ea00adc256fcfe4e2aa878bdd285e36728491c94c65fa3512b8",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/k-JtgVeOfzf4nGJ2OjEo8c8VnBJcOaT8TB_SYhDnQLg",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-WAL_USDC-9",
+      "strategistId": "diamond-dan",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": -0.08,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.039792179710494084
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 48.2,
+          "interpretation": "neutral",
+          "vote": 0.059221658206431486
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.06,
+          "interpretation": "flat",
+          "vote": 0.01433732866892182
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.09,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.00 (range −1 to +1), which maps to no position (HOLD). Bullish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.034894 (-0.14% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 0% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.09%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034894,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034894,
+        "highestBid": 0.0348835318,
+        "lowestAsk": 0.034904468200000004,
+        "priceChangePct24h": -0.14308608058608469,
+        "high24h": 0.034944,
+        "low24h": 0.034823,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925857142,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781318690314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "-XRFbV2d3IM2L1qWOI1p5Fpy1SJwkJhuMrhg5p9RWt4",
+        "suiObjectId": "0x4fe33ea8e4bd4cd4ae4638bed6e145835d15ff5f5746092cfd8579bac48bdf38",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/-XRFbV2d3IM2L1qWOI1p5Fpy1SJwkJhuMrhg5p9RWt4",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-WAL_USDC-10",
+      "strategistId": "diamond-dan",
+      "pool": "WAL_USDC",
+      "side": "BUY",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.0022678261443224317
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 47.6,
+          "interpretation": "neutral",
+          "vote": 0.07936507936499192
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0,
+          "interpretation": "flat",
+          "vote": 0
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of 0.02 (range −1 to +1), which maps to no position (HOLD). Bullish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.034644 (-0.01% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 2% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034644,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034644,
+        "highestBid": 0.0346336068,
+        "lowestAsk": 0.0346543932,
+        "priceChangePct24h": -0.005772672169953241,
+        "high24h": 0.03467,
+        "low24h": 0.034576,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925872411,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781297090314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "bGKgxr0Bosz5bqv1utn6ezBQlPq8YbAYVrl8TYJ-6l4",
+        "suiObjectId": "0xafc1d9f54c048beea24a97bef7bfb7624ff3bab48e80f1dea3d197f262572a7d",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/bGKgxr0Bosz5bqv1utn6ezBQlPq8YbAYVrl8TYJ-6l4",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-WAL_USDC-11",
+      "strategistId": "diamond-dan",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0,
+          "interpretation": "flat / no clear trend",
+          "vote": -0.0017132722403265643
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 50,
+          "interpretation": "neutral",
+          "vote": 0
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0,
+          "interpretation": "flat",
+          "vote": 0
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.02,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.00 (range −1 to +1), which maps to no position (HOLD). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.034744 (+0.00% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.009,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.50% of portfolio: 10% cap × confidence 0% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.02%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034744,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034744,
+        "highestBid": 0.0347335768,
+        "lowestAsk": 0.034754423199999995,
+        "priceChangePct24h": 0,
+        "high24h": 0.034755,
+        "low24h": 0.034727,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925886236,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781275490314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "w6emaBNbR8c-mqEYX51RDk1yGx8uaP1mPD49BgvzZ_E",
+        "suiObjectId": "0x93a38eff403480ce0ace8efb6911d6a3e58037c053228a8ccfd5993d4d65d89d",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/w6emaBNbR8c-mqEYX51RDk1yGx8uaP1mPD49BgvzZ_E",
+        "certified": false
+      }
+    },
+    {
+      "id": "diamond-dan-WAL_USDC-12",
+      "strategistId": "diamond-dan",
+      "pool": "WAL_USDC",
+      "side": "SELL",
+      "confidence": 0.3,
+      "indicators": [
+        {
+          "key": "sma_cross",
+          "label": "SMA 7 vs 21 (trend)",
+          "value": 0.04,
+          "interpretation": "flat / no clear trend",
+          "vote": 0.018104611738375735
+        },
+        {
+          "key": "rsi14",
+          "label": "RSI (14)",
+          "value": 63.2,
+          "interpretation": "neutral",
+          "vote": -0.4394693200663601
+        },
+        {
+          "key": "momentum10",
+          "label": "Momentum (10)",
+          "value": 0.09,
+          "interpretation": "flat",
+          "vote": 0.021616324648376074
+        },
+        {
+          "key": "vol20",
+          "label": "Realised vol (20)",
+          "value": 0.06,
+          "interpretation": "calm",
+          "vote": 0
+        }
+      ],
+      "rationale": "On WAL_USDC, the disclosed weighted-vote model produced a conviction score of -0.07 (range −1 to +1), which maps to no position (HOLD). Bearish factors: RSI (14). Conviction is below the ±0.12 action threshold (or the spread is too wide to trade fairly), so the honest call is to stay flat rather than manufacture a trade. Last price 0.034726 (-0.05% 24h), spread 6.0bps. Every input above is reproducible from public DeepBook data.",
+      "riskGuards": {
+        "positionSizePct": 0.013,
+        "stopLossPct": 2.4,
+        "takeProfitPct": 2.7,
+        "maxSpreadBps": 50,
+        "notes": [
+          "Position sized to 0.72% of portfolio: 10% cap × confidence 7% × volatility scaling.",
+          "Stop 1.5% set at 1.5× realised volatility (0.06%) to avoid noise stop-outs, hard-capped at 8%.",
+          "Take-profit 2.7% targets ~1.8:1 reward-to-risk.",
+          "Abstain rule: skip trade if live spread > 50bps to protect against illiquid fills."
+        ]
+      },
+      "entryPrice": 0.034726,
+      "snapshot": {
+        "pool": "WAL_USDC",
+        "baseSymbol": "WAL",
+        "quoteSymbol": "USDC",
+        "lastPrice": 0.034726,
+        "highestBid": 0.0347155822,
+        "lowestAsk": 0.0347364178,
+        "priceChangePct24h": -0.051807506332020456,
+        "high24h": 0.034744,
+        "low24h": 0.034644,
+        "baseVolume24h": 0,
+        "quoteVolume24h": 0,
+        "spreadBps": 6,
+        "takenAt": 1781925902108,
+        "source": "deepbook-indexer.mainnet(backtest)"
+      },
+      "createdAt": 1781253890314,
+      "engineVersion": "glassbox-quant-1.0.0",
+      "walrus": {
+        "blobId": "V8ao4uXF-yBxmeLegxNLSusgTDCTvISQmSW7mzgreYE",
+        "suiObjectId": "0x6c99cded5a9ffaf5ee0106d0e83f222fcdf86ea17a3270a5cd7b16dc10431559",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/V8ao4uXF-yBxmeLegxNLSusgTDCTvISQmSW7mzgreYE",
+        "certified": false
+      }
+    }
+  ],
+  "results": [
+    {
+      "callId": "aletheia-SUI_USDC-1",
+      "callBlobId": "uhf8AV3c4PrDhHZiznc2mti3FnYhYj0oZ1fXwHuwFkg",
+      "outcome": "WIN",
+      "exitPrice": 0.71261,
+      "realizedPct": 0.46,
+      "horizonHours": 24,
+      "resolvedAt": 1781988290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "4-nV6fKCUsu3E-dqcxCnkQ2hI7EH7k_Vflz21XwFKL0",
+        "suiObjectId": "0xd805f6fcb7da0d5b6c059a0be88f418b5135c7b8f7b1387c136de055d15468bc",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/4-nV6fKCUsu3E-dqcxCnkQ2hI7EH7k_Vflz21XwFKL0",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-SUI_USDC-2",
+      "callBlobId": "o7iG-0oNC-UBBH_gM1aQNpAQLO30fOwbH6fa2o1yaxE",
+      "outcome": "WIN",
+      "exitPrice": 0.71265,
+      "realizedPct": 0.14,
+      "horizonHours": 24,
+      "resolvedAt": 1781966690314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "PFU08C4grSlIinYqUq36RYFD5nXTDBxd5_S3fOCKWUg",
+        "suiObjectId": "0x7b9fe2ef2931fe55ea5be9daad2f6ee9682741c3e37933edabe03393bda90cf4",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/PFU08C4grSlIinYqUq36RYFD5nXTDBxd5_S3fOCKWUg",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-SUI_USDC-3",
+      "callBlobId": "D-YbTIf2D2gASd3SW9OpnKHmzGacKUBS9koHAOjRgG0",
+      "outcome": "LOSS",
+      "exitPrice": 0.71346,
+      "realizedPct": -0.23,
+      "horizonHours": 24,
+      "resolvedAt": 1781945090314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "CufiIpFLX_dCF4yYEy_WB3d5u2Af9Mi2_Zh5XnHdkf4",
+        "suiObjectId": "0x72fe1f9cc319e63d2dd1f4bc94115d649e583e310f327174a7ea7bff93f2ddc4",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/CufiIpFLX_dCF4yYEy_WB3d5u2Af9Mi2_Zh5XnHdkf4",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-SUI_USDC-4",
+      "callBlobId": "BVTOO5TKR2-Ch8QgjrPsqZbFYRllObDpa2aWN-TzaQ8",
+      "outcome": "WIN",
+      "exitPrice": 0.713,
+      "realizedPct": 0.2,
+      "horizonHours": 24,
+      "resolvedAt": 1781923490314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "KHOKqmnervT0CV0g-4f9u6slheGITRk5m6a43Lc-rYo",
+        "suiObjectId": "0xe7163baf2e88d4353c42667f0842387f01784611eb9ab1d4ef78b23bd6a8ff06",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/KHOKqmnervT0CV0g-4f9u6slheGITRk5m6a43Lc-rYo",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-SUI_USDC-5",
+      "callBlobId": "uNGCqZT862HYLahtVGGI5aHIjQOx42FXU4pdDYDmHV0",
+      "outcome": "LOSS",
+      "exitPrice": 0.70863,
+      "realizedPct": -0.51,
+      "horizonHours": 24,
+      "resolvedAt": 1781901890314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "ua3qq7OTHaXb5ZFkMLdtu_645deUlk4h-N7elFyt6W8",
+        "suiObjectId": "0x82571e32a2eabb5f1364d2e07dca88e4f1b0d3fd267bc605ebdf6042e5248a2e",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/ua3qq7OTHaXb5ZFkMLdtu_645deUlk4h-N7elFyt6W8",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-SUI_USDC-6",
+      "callBlobId": "0OChx5I0CxYUMQh6-bHuGbg0Ruv-FIJKxedNr0AoQDQ",
+      "outcome": "BREAKEVEN",
+      "exitPrice": 0.70978,
+      "realizedPct": -0.04,
+      "horizonHours": 24,
+      "resolvedAt": 1781880290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "_ryY6if4yw-wWMcZXi5qi4_D9XgK8VD-kkKUtNZXXx0",
+        "suiObjectId": "0xb8c5bd39b545cdab4bc228341f7c0b9e5364d20b5f57c754d555cb9353e69aef",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/_ryY6if4yw-wWMcZXi5qi4_D9XgK8VD-kkKUtNZXXx0",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-DEEP_USDC-7",
+      "callBlobId": "TWHSwhu76GQEC1W4j32FlqvTXDFh9xQMlN-42gAyJDo",
+      "outcome": "WIN",
+      "exitPrice": 0.01648,
+      "realizedPct": 1.32,
+      "horizonHours": 24,
+      "resolvedAt": 1781858690314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "VJeQjcAEKeeuf19T9RnhnasGni5mQwR8ZZzbjp7zvQM",
+        "suiObjectId": "0x31f19efb75d81c728b02d55a825472d131e69fe49cf11c29e2e88d64483be5b9",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/VJeQjcAEKeeuf19T9RnhnasGni5mQwR8ZZzbjp7zvQM",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-WAL_USDC-8",
+      "callBlobId": "pHOmlfUyRw0-Dhm0BccZ603hCLOsWJ6qDXs8vDzc9oI",
+      "outcome": "LOSS",
+      "exitPrice": 0.034957,
+      "realizedPct": -0.18,
+      "horizonHours": 24,
+      "resolvedAt": 1781837090314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "CoFyy3CD00z04icqtf3mwrHG906AaXRzYZ1BBZPVkSI",
+        "suiObjectId": "0x5f2910c7907523cfc749b3fa325364c18438caa1d01e6925aa00b077e3ccc24a",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/CoFyy3CD00z04icqtf3mwrHG906AaXRzYZ1BBZPVkSI",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-WAL_USDC-9",
+      "callBlobId": "OIsYInsnuOtBAMLZhSdKUSoDXUP9ursMAPDeuAt_zOA",
+      "outcome": "LOSS",
+      "exitPrice": 0.034573,
+      "realizedPct": -1.06,
+      "horizonHours": 24,
+      "resolvedAt": 1781815490314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "njqrcF0m3T7MX4KKA8v5SpjQbkMEJr1HCbAgL9rZsp0",
+        "suiObjectId": "0x1fc86e0c99daa2c06bfab569a8d0c4cf5a9d08da26d327f1adecbc15487e6b0e",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/njqrcF0m3T7MX4KKA8v5SpjQbkMEJr1HCbAgL9rZsp0",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-WAL_USDC-10",
+      "callBlobId": "ZEm7usn2VLV3UgqYmotYnkwM5-m-VYBm5whf4s0aRi0",
+      "outcome": "LOSS",
+      "exitPrice": 0.034744,
+      "realizedPct": -0.21,
+      "horizonHours": 24,
+      "resolvedAt": 1781793890314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "hLXjTfRNK6qrIEeucMUzh33dPR6hAChUTt43Z4HnVSM",
+        "suiObjectId": "0x9691045fd8b076963df62c3ebae6340c6bc2d20d8bd57abdc7d4f127c99da051",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/hLXjTfRNK6qrIEeucMUzh33dPR6hAChUTt43Z4HnVSM",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-WAL_USDC-11",
+      "callBlobId": "94Vw9a_xSzSC126T_rUMEBDgrDFUsLbxbAWhU1Qw9Ik",
+      "outcome": "BREAKEVEN",
+      "exitPrice": 0.034743,
+      "realizedPct": 0,
+      "horizonHours": 24,
+      "resolvedAt": 1781772290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "aJAgqn-t4IG1lHQAD-k1XuQuWd1x3QizlzFTc7cjIac",
+        "suiObjectId": "0x7f68a9a691eb03b6bb0546b18065c9dea9a210b1c318619d47528bdec9647a7d",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/aJAgqn-t4IG1lHQAD-k1XuQuWd1x3QizlzFTc7cjIac",
+        "certified": false
+      }
+    },
+    {
+      "callId": "aletheia-WAL_USDC-12",
+      "callBlobId": "2-Mv8BTPDyedyE8z_TWWu-gPGKIJLoXtg1onSKiHStw",
+      "outcome": "LOSS",
+      "exitPrice": 0.034336,
+      "realizedPct": -0.45,
+      "horizonHours": 24,
+      "resolvedAt": 1781750690314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "K62eZdKSE3pxsXUVH-PBCIXNWLEyrwyFkk43v3C-2Ss",
+        "suiObjectId": "0x924ffe599eacfe6a5e975c5ecebd38144c3493755ace32499b967b3fe8c9ec38",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/K62eZdKSE3pxsXUVH-PBCIXNWLEyrwyFkk43v3C-2Ss",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-SUI_USDC-1",
+      "callBlobId": "PvwoOmK92_laSvm20T3TkRsr7wIMjTmdZdVXBk8UeVg",
+      "outcome": "LOSS",
+      "exitPrice": 0.71346,
+      "realizedPct": -0.23,
+      "horizonHours": 24,
+      "resolvedAt": 1781729090314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "F3kQbHJHYp10H7Ms3JJWGIsVzENwe_rCeBONxZ3VclA",
+        "suiObjectId": "0x82e0198e35f89fc3f3d0ba59339fa2cc32e8f7ef9d3376e36f0fe9883ec4881b",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/F3kQbHJHYp10H7Ms3JJWGIsVzENwe_rCeBONxZ3VclA",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-SUI_USDC-2",
+      "callBlobId": "WDBr_qaQVgYpljBmsposkvBmM6LVdF856tGldYkGGJ0",
+      "outcome": "WIN",
+      "exitPrice": 0.71299,
+      "realizedPct": 0.21,
+      "horizonHours": 24,
+      "resolvedAt": 1781707490314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "pl847nUElz8j0vs5w_k0nRz9Qcf4SFdt9hzvm4OA-D0",
+        "suiObjectId": "0x85e9f40faf42eed37e6b903b68d130f5d52493d668c106c6a0e13f88f625e381",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/pl847nUElz8j0vs5w_k0nRz9Qcf4SFdt9hzvm4OA-D0",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-SUI_USDC-3",
+      "callBlobId": "CNYpQ5gBdyifdWfAA0kojFRZofRzpnn7a0vnQX95nFI",
+      "outcome": "WIN",
+      "exitPrice": 0.7109,
+      "realizedPct": 0.3,
+      "horizonHours": 24,
+      "resolvedAt": 1781685890314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "-yQMwbTXfbHVR-663c5pDVYefcj4h6FAXx0JvJMUm4E",
+        "suiObjectId": "0x3761c0d50bdcc3f53e87ea3562ca3d56b5ad304c107eb3e35522c52bab168d14",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/-yQMwbTXfbHVR-663c5pDVYefcj4h6FAXx0JvJMUm4E",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-SUI_USDC-4",
+      "callBlobId": "iugjWMiuWeXotTxCSirIyxC0I1qWn52c4veAsDKEO70",
+      "outcome": "LOSS",
+      "exitPrice": 0.70884,
+      "realizedPct": -0.49,
+      "horizonHours": 24,
+      "resolvedAt": 1781664290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "MxO2RwtYDPikbNQIRgqLdWSWadQgdFDFOurAoaztInY",
+        "suiObjectId": "0xcf89ac90f5816afdf007a72e97464970d193acf85949e807ecb1b279b07b983b",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/MxO2RwtYDPikbNQIRgqLdWSWadQgdFDFOurAoaztInY",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-SUI_USDC-5",
+      "callBlobId": "2ZEsxMxLSWCOVhujeyFAVjmdGNZ36fLwe-yRona1cks",
+      "outcome": "LOSS",
+      "exitPrice": 0.70936,
+      "realizedPct": -0.11,
+      "horizonHours": 24,
+      "resolvedAt": 1781642690314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "0xGYD09I3wEvWvpDetXG_4iwbKQ629-LvAZcWxK6LSY",
+        "suiObjectId": "0xeb42520507492877a12a0af76440dfcc86faea93e46dea860fa828cd3a116f39",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/0xGYD09I3wEvWvpDetXG_4iwbKQ629-LvAZcWxK6LSY",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-DEEP_USDC-6",
+      "callBlobId": "vW4lUOknz1qXYlwLzDweQ46gAUhMO9MLwFEMO4glbe8",
+      "outcome": "WIN",
+      "exitPrice": 0.01649,
+      "realizedPct": 0.78,
+      "horizonHours": 24,
+      "resolvedAt": 1781621090314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "HbR2J23hOV5beYN-4R2y4FEVTophmO_T9PZ2iWbyIpA",
+        "suiObjectId": "0x1310e8137349c2dbf9c6855c5a504e29846e38e347e52fd39155244165b8a340",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/HbR2J23hOV5beYN-4R2y4FEVTophmO_T9PZ2iWbyIpA",
+        "certified": false
+      }
+    },
+    {
+      "callId": "momentum-mia-DEEP_USDC-7",
+      "callBlobId": "8nwUJ86hFwTOP57MhyzaGvQEU9SkJ5c6elgWaAwlC8Q",
+      "outcome": "WIN",
+      "exitPrice": 0.01667,
+      "realizedPct": 0.66,
+      "horizonHours": 24,
+      "resolvedAt": 1781599490314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "JpuWsgrRMvZFkhzTYeYexURL_xYhD4oOmA1dPy-wwyc",
+        "suiObjectId": "0x7f3b8637dd1ae58dd631c09571dbf3c558bdd4644dac71a2944a8a716e288dc7",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/JpuWsgrRMvZFkhzTYeYexURL_xYhD4oOmA1dPy-wwyc",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-DEEP_USDC-1",
+      "callBlobId": "0sa7wegWmqK5SUK-sEqzHBpr4JFNdAhlZRoMWAv2zlc",
+      "outcome": "WIN",
+      "exitPrice": 0.01647,
+      "realizedPct": 0.66,
+      "horizonHours": 24,
+      "resolvedAt": 1781577890314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "18cD4vXepHGJN8tjMYeWnQZvlsNxfwIYczQ9Wux0Ew0",
+        "suiObjectId": "0x9ef9945afee7766edc2afee529c441f16ceaace7f57438613460d2f844ee5557",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/18cD4vXepHGJN8tjMYeWnQZvlsNxfwIYczQ9Wux0Ew0",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-DEEP_USDC-2",
+      "callBlobId": "WZVy-7a-z9R1nXM41pZyYfoMpNJpJUHFat3CeJDDAzI",
+      "outcome": "WIN",
+      "exitPrice": 0.01669,
+      "realizedPct": 0.42,
+      "horizonHours": 24,
+      "resolvedAt": 1781556290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "-PXhmdEPayMTYz4GUziILcx8dxINmpTaR84k-b3oc2Y",
+        "suiObjectId": "0xffdb52ff68f261ea2ed266e4acc17a1674d02d078a8d2de79b83e50772b45dba",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/-PXhmdEPayMTYz4GUziILcx8dxINmpTaR84k-b3oc2Y",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-DEEP_USDC-3",
+      "callBlobId": "I_LNwTbI6ANdI4VxS8y6id4an7mIeh4u9ZmTL-OZgEU",
+      "outcome": "LOSS",
+      "exitPrice": 0.01652,
+      "realizedPct": -0.96,
+      "horizonHours": 24,
+      "resolvedAt": 1781534690314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "ffqx75KwVlTBbK2NxVCnrjGY6tarrbxD5uPlpTU7hrs",
+        "suiObjectId": "0x20f0779fcd63247d79b4d3f660bdda6f55a4ce32d28410759561982d79398481",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/ffqx75KwVlTBbK2NxVCnrjGY6tarrbxD5uPlpTU7hrs",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-DEEP_USDC-4",
+      "callBlobId": "o055QnfNNc7lyrGvcEuOpvpV9EQfRaLhfDxk-EKVNK0",
+      "outcome": "LOSS",
+      "exitPrice": 0.01672,
+      "realizedPct": -0.97,
+      "horizonHours": 24,
+      "resolvedAt": 1781513090314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "hCwQbF__ghCdEXl5QjshlryMCvs-l_6z54M36Oxca_U",
+        "suiObjectId": "0x016be9ca24e028dc3c0b63ce092fc5194e4b4459f4b45934d28db07f473a1df5",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/hCwQbF__ghCdEXl5QjshlryMCvs-l_6z54M36Oxca_U",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-DEEP_USDC-5",
+      "callBlobId": "fkqRc6zCafbAjzTxaya40jTrI1XkVDzysQPeS-gWZQc",
+      "outcome": "WIN",
+      "exitPrice": 0.01666,
+      "realizedPct": 0.6,
+      "horizonHours": 24,
+      "resolvedAt": 1781491490314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "L7t7oouumc8Qm8YEHJwWnUEhvVg5-6l7R-Lp1AU9FJM",
+        "suiObjectId": "0x0401e3a5a650820392284ede70bb52b67ce95674bafdb69b325eae1bf1eb7a60",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/L7t7oouumc8Qm8YEHJwWnUEhvVg5-6l7R-Lp1AU9FJM",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-DEEP_USDC-6",
+      "callBlobId": "w895F4BCIWdt_ZKEEeMGYKfKWh2_k_Y1769uRaSnwKs",
+      "outcome": "WIN",
+      "exitPrice": 0.01661,
+      "realizedPct": 0.18,
+      "horizonHours": 24,
+      "resolvedAt": 1781469890314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "WopHGgiDKbEuMD7zCyIg3GdlNm-NMKHxUIl5pO8STWM",
+        "suiObjectId": "0x41a116dc959c4be9f2ae14494caed72f52ea513ff4a323d62bb77fd9a6f705e7",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/WopHGgiDKbEuMD7zCyIg3GdlNm-NMKHxUIl5pO8STWM",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-WAL_USDC-7",
+      "callBlobId": "UBXW1IHRB7u4WgyuLKfeEvD2jtUDmgm87nru8aoRXc0",
+      "outcome": "WIN",
+      "exitPrice": 0.034988,
+      "realizedPct": 1.65,
+      "horizonHours": 24,
+      "resolvedAt": 1781448290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "LvNa0N6kx5P_x9tQfaMpE7rZoBdIRCz8-inKyqsIBcQ",
+        "suiObjectId": "0x0c71f9ee5047cfd8a9028e45bc8ea644096230dbbec751c666d48ec8ce2cebae",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/LvNa0N6kx5P_x9tQfaMpE7rZoBdIRCz8-inKyqsIBcQ",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-WAL_USDC-8",
+      "callBlobId": "k-JtgVeOfzf4nGJ2OjEo8c8VnBJcOaT8TB_SYhDnQLg",
+      "outcome": "WIN",
+      "exitPrice": 0.034877,
+      "realizedPct": 0.24,
+      "horizonHours": 24,
+      "resolvedAt": 1781426690314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "IOys8uCMFRkiULAIgrX69DNwHqAgvI33mAywhmK8X8g",
+        "suiObjectId": "0x9bdbaf311c976c463dc5603e5018159dc4a0d796cad133acf1fcc99330a67f99",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/IOys8uCMFRkiULAIgrX69DNwHqAgvI33mAywhmK8X8g",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-WAL_USDC-9",
+      "callBlobId": "-XRFbV2d3IM2L1qWOI1p5Fpy1SJwkJhuMrhg5p9RWt4",
+      "outcome": "WIN",
+      "exitPrice": 0.034645,
+      "realizedPct": 0.71,
+      "horizonHours": 24,
+      "resolvedAt": 1781405090314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "9drjPY9wbL8-1-OX8sSmlOl6tazlnJpGp0wsSiWF1mk",
+        "suiObjectId": "0x2661cc8d81d5e0424ab555017cb1000301dc86301a565c11e3f3b558b03a7c44",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/9drjPY9wbL8-1-OX8sSmlOl6tazlnJpGp0wsSiWF1mk",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-WAL_USDC-10",
+      "callBlobId": "bGKgxr0Bosz5bqv1utn6ezBQlPq8YbAYVrl8TYJ-6l4",
+      "outcome": "WIN",
+      "exitPrice": 0.034744,
+      "realizedPct": 0.29,
+      "horizonHours": 24,
+      "resolvedAt": 1781383490314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "gJZZ2CMRczYtEJOuojtId5gxOtA1eddMeZm_tC7qOdc",
+        "suiObjectId": "0xc4f6d6cf3ca5c4a35e7b6b8ce8cbbcd946f723c2111249cea65812bff4fedbd2",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/gJZZ2CMRczYtEJOuojtId5gxOtA1eddMeZm_tC7qOdc",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-WAL_USDC-11",
+      "callBlobId": "w6emaBNbR8c-mqEYX51RDk1yGx8uaP1mPD49BgvzZ_E",
+      "outcome": "WIN",
+      "exitPrice": 0.034709,
+      "realizedPct": 0.1,
+      "horizonHours": 24,
+      "resolvedAt": 1781361890314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "9h8Tzq6jVdGytcZuzW6nT_JB9FoAbTyn1qE-Vwufrd0",
+        "suiObjectId": "0xb41d0e44602c73c0ca86462297716894229c80d41122c46009633f40b71b4ab5",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/9h8Tzq6jVdGytcZuzW6nT_JB9FoAbTyn1qE-Vwufrd0",
+        "certified": false
+      }
+    },
+    {
+      "callId": "diamond-dan-WAL_USDC-12",
+      "callBlobId": "V8ao4uXF-yBxmeLegxNLSusgTDCTvISQmSW7mzgreYE",
+      "outcome": "WIN",
+      "exitPrice": 0.034434,
+      "realizedPct": 0.84,
+      "horizonHours": 24,
+      "resolvedAt": 1781340290314,
+      "reason": "horizon elapsed",
+      "walrus": {
+        "blobId": "3lcRHhZvFMxBiQK8vPf70r27gDcYsJ7AoL3qkIRuC4Q",
+        "suiObjectId": "0x6415231bcf2637156bd1221c5ce79e18b5eeef1c2b2e7f7af5dd651d8413919e",
+        "storedEpoch": 434,
+        "network": "testnet",
+        "aggregatorUrl": "https://aggregator.walrus-testnet.walrus.space/v1/blobs/3lcRHhZvFMxBiQK8vPf70r27gDcYsJ7AoL3qkIRuC4Q",
+        "certified": false
+      }
+    }
+  ],
+  "generatedAt": 1781923490314
+}
