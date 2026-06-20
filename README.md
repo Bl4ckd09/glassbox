@@ -2,7 +2,7 @@
 
 > Built for the **Encode Vibe Coding Hackathon** · targeting the **Sui (DeepBook & Walrus)** bounty and the **BGA AI Trading & Strategy** track.
 
-**Live app:** _(Vercel URL — see Deployment)_
+**Live app:** https://glassbox-beige.vercel.app
 **One-liner:** **Pre-registration for trading calls.** Every call — its full reasoning and risk plan — is committed to **Walrus** *before* the outcome is known, so track records on **Sui DeepBook** become tamper-proof. No black box. No survivorship bias.
 
 > **The sharp idea:** on-chain PnL trackers (Nansen, Arkham) show you what a wallet *did*. GlassBox proves what a strategist *said they'd do — in advance, with the receipts*. It's clinical-trial pre-registration, applied to trading.

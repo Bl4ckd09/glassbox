@@ -30,7 +30,7 @@ Trading "finfluencers" delete their losing calls and sell you a cherry-picked hi
 ## Links / artifacts
 
 - **Repo:** _(this repository)_
-- **Live app:** _(Vercel URL — `vercel deploy`)_
+- **Live app:** **https://glassbox-beige.vercel.app** (deployed on Vercel, builds in cloud)
 - **README.md** — full write-up + criteria mapping
 - **EVALUATION.md** — adversarial self-evaluation as a judge
 - **A real anchored call (verify live):**
@@ -41,8 +41,9 @@ Trading "finfluencers" delete their losing calls and sell you a cherry-picked hi
 - [x] Public app built with AI tooling (the hackathon's one rule)
 - [x] Uses Sui DeepBook (live market data) + Walrus (immutable call provenance)
 - [x] AI trading/strategy tool with transparency & risk management (BGA)
-- [x] Working MVP verified end-to-end on live data
+- [x] Working MVP verified end-to-end on live data (incl. production)
 - [x] README + evaluation + demo script
-- [ ] Deploy to Vercel for a public URL
-- [ ] Push to public GitHub repo
+- [x] Deployed to Vercel — public URL live
+- [x] Cryptographic authorship (each call signed by a Sui key)
+- [ ] Push to public GitHub repo (needs your confirmation)
 - [ ] 2–3 min demo video / live walkthrough
