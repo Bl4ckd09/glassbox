@@ -29,7 +29,7 @@ Trading "finfluencers" delete their losing calls and sell you a cherry-picked hi
 
 ## Links / artifacts
 
-- **Repo:** _(this repository)_
+- **Repo:** https://github.com/Bl4ckd09/glassbox
 - **Live app:** **https://glassbox-beige.vercel.app** (deployed on Vercel, builds in cloud)
 - **README.md** — full write-up + criteria mapping
 - **EVALUATION.md** — adversarial self-evaluation as a judge
