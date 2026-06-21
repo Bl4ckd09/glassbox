@@ -1,0 +1,30 @@
+[
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f1.png",
+    "narration": "GlassBox brings pre-registration to trading. Audit \u2014 don't trust."
+  },
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f2.png",
+    "narration": "Trading influencers delete their losing calls and sell you a cherry-picked highlight reel. You can't tell real skill from survivorship bias."
+  },
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f3.png",
+    "narration": "On-chain trackers show what a wallet did. GlassBox proves what a strategist said they would do, in advance \u2014 like clinical-trial pre-registration, applied to trading."
+  },
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f4.png",
+    "narration": "Every call is computed from live Sui DeepBook markets, signed with a Sui key, and committed to Walrus before the outcome is known. Anyone can verify it."
+  },
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f5.png",
+    "narration": "Here's a real call, pre-registered on Walrus. Fetch it from a public aggregator and the content matches; the signature is valid. Tamper-proof, and impossible to fake."
+  },
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f6.png",
+    "narration": "Providers are ranked by a disclosed, risk-adjusted score \u2014 not raw profit. Even our own AI agent is shown underperforming. Nothing is hidden."
+  },
+  {
+    "image": "/Users/sunhwang/glassbox/video/frames/f7.png",
+    "narration": "GlassBox. Trading you can audit. Live now \u2014 built on Sui, for the Encode hackathon."
+  }
+]
