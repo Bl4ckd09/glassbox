@@ -51,3 +51,25 @@ On-chain DeepBook order execution via wallet-connect; Walrus writes via the TS S
 
 ### Team
 _(add your name / handle here)_
+
+---
+
+## Encode platform form — long answers
+
+### Q1. How you are incorporating the selected challenge(s)
+
+**Sui — AI-Native App with DeepBook & Walrus.** GlassBox uses both featured technologies as load-bearing components. DeepBook: every signal is computed from live on-chain DeepBook market data (order books + trade history), and the leaderboard is backtested on real DeepBook trades. Walrus: every call — reasoning, risk plan, outcome — is written immutably to Walrus the instant it's made; 31 historical calls ship pre-anchored as real blobs anyone can fetch from a public aggregator. Sui keys: each strategist signs the canonical call payload with a Sui Ed25519 key, so authorship is provable. The AI-native part is a transparent quant agent with optional Claude narration that never overrides the decision.
+
+**BGA — AI Trading & Strategy.** An AI trading-strategy tool built around fairness and transparency, not raw returns — matching "reward better systems, not the highest returns." It attacks information asymmetry: signal sellers delete losing calls and sell a survivorship-biased highlight reel. We rank by a disclosed, auditable risk-adjusted "GlassBox Score" instead of PnL. Strategy logic is fully disclosed (indicator votes + explicit risk guards: volatility-scaled sizing, hard-capped stops, spread/liquidity abstain). Transparency & verifiability is the core — every call and the ranking formula are independently checkable.
+
+**Best use of Vercel.** Built and shipped on Vercel: Next.js 16 (App Router) with all backend logic as Vercel serverless Functions (/api/market, /api/signal, /api/leaderboard, /api/verify). Built AI-first with Claude Code; the production build runs in Vercel's cloud and the live demo is hosted there. The optional AI narration is structured to drop into the Vercel AI SDK.
+
+### Q2. Detailed explanation of the submission
+
+What it is: a provenance layer for trading signals — "pre-registration for trading calls." A provider (AI or human) publishes a call; at that moment it is computed from live Sui DeepBook data, signed by their Sui key, and committed immutably to Walrus before the outcome is known. When it resolves, the outcome is also written to Walrus, chained to the entry. Because blobs are content-addressed and calls are signed, nothing can be edited, deleted, back-dated, or forged. The leaderboard is computed from that immutable history and ranked by a disclosed risk-adjusted score. Insight: on-chain PnL trackers show what a wallet did; GlassBox proves what a strategist said they'd do, in advance — clinical-trial pre-registration applied to trading.
+
+Process: pulled the exact rubrics for both bounties; generated and scored 3-5 ideas against both; chose the idea in the overlap so one build competes for both (Walrus = Sui technical + BGA transparency; DeepBook = Sui stack + BGA on-chain path). Sharpened framing from "verifiable copy-trading" to "pre-registration." Built iteratively: transparent quant engine, DeepBook integration, Walrus flow, a seed generator that backtests on real trades and anchors every call, then a polished dashboard. Verified end-to-end on live data, deployed to Vercel, then hardened with two adversarial-review upgrades: Sui-key signing of every call, and a disclosed GlassBox Score replacing raw-PnL ranking.
+
+Key achievements: (1) genuinely on-chain, not mocked — real DeepBook reads + 31 real Walrus blobs; (2) cryptographic authorship — tampering/impersonation breaks verification; (3) a disclosed risk-adjusted scoring system operationalising "better systems, not biggest gamble"; (4) radical honesty — even our own AI agent is shown underperforming; (5) shipped live on Vercel with a public repo, full criteria mapping, and an adversarial self-evaluation.
+
+Context/honesty: track records use real but short-window DeepBook tick data; remaining next steps stated openly — on-chain execution via wallet-connect, Walrus writes via the TS SDK + a Sui Move attestation object, and longer multi-day backtests.
