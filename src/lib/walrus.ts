@@ -74,10 +74,11 @@ export async function storeJson(data: unknown, epochs = 5): Promise<WalrusProof>
 
 // Read a blob back from Walrus (proves independent verifiability).
 export async function readJson<T = unknown>(blobId: string): Promise<T> {
+  if (!/^[A-Za-z0-9_-]{43}$/.test(blobId)) throw new RangeError("Invalid blob ID");
   let lastErr: unknown;
   for (const agg of AGGREGATORS) {
     try {
-      const res = await fetch(`${agg}/v1/blobs/${blobId}`, { signal: AbortSignal.timeout(20000) });
+      const res = await fetch(`${agg}/v1/blobs/${blobId}`, { redirect: "error", signal: AbortSignal.timeout(20000) });
       if (!res.ok) {
         lastErr = new Error(`aggregator ${agg} -> ${res.status}`);
         continue;

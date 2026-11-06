@@ -82,6 +82,8 @@ Live DeepBook (Sui mainnet CLOB)  ──►  Quant engine (transparent)  ──�
 - **`scripts/seed.ts`** — backtests each strategist on **real DeepBook trade history** and anchors every historical call + outcome to Walrus (so the leaderboard ships with independently verifiable history).
 - **API routes** — `/api/market`, `/api/signal`, `/api/leaderboard`, `/api/strategist/[id]`, `/api/verify`.
 
+The `/api/verify` route accepts a 43-character Walrus blob ID. It rejects redirects from aggregators.
+
 ## Run locally
 
 ```bash

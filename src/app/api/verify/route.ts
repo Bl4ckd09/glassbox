@@ -36,6 +36,7 @@ export async function GET(req: NextRequest) {
       data,
     });
   } catch (e) {
-    return NextResponse.json({ blobId, verified: false, error: String(e) }, { status: 502 });
+    const invalid = e instanceof RangeError;
+    return NextResponse.json({ blobId, verified: false, error: invalid ? "Invalid blob ID" : "Verification failed" }, { status: invalid ? 400 : 502 });
   }
 }
